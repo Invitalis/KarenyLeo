@@ -26,10 +26,14 @@ body {
 .container {
     width: 100%;
     min-height: 100vh;
-    padding: 20px;
+    padding: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url('marcodorado.png');
+    background-size: 110% 110%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .invitation-card {
@@ -38,9 +42,10 @@ body {
     padding: 0;
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
     max-width: 600px;
-    width: 100%;
+    width: 85%;
     text-align: center;
     overflow: hidden;
+    margin: 60px;
 }
 
 .invitation-background {
@@ -53,6 +58,7 @@ body {
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
+    opacity: 0.3;
     z-index: 1;
 }
 
@@ -314,8 +320,14 @@ button:hover {
 }
 
 @media (max-width: 480px) {
-    .invitation-content {
+    .container {
         padding: 20px;
+        background-size: 120% 105%;
+    }
+
+    .invitation-card {
+        margin: 30px;
+        width: 90%;
     }
 
     .main-image {
