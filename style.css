@@ -20,7 +20,11 @@ body {
     line-height: 1.6;
     color: var(--text-dark);
     min-height: 100vh;
-    background-color: var(--white);
+    background-image: url('fondoacua.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .container {
@@ -30,10 +34,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('marcodorado.png');
-    background-size: 110% 110%;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .invitation-card {
@@ -42,10 +43,10 @@ body {
     padding: 0;
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
     max-width: 600px;
-    width: 85%;
+    width: 100%;
     text-align: center;
     overflow: hidden;
-    margin: 60px;
+    background-color: var(--white);
 }
 
 .invitation-background {
@@ -140,7 +141,7 @@ body {
 
 .novios-imagen {
     width: 100%;
-    max-width: 300px;
+    max-width: 200px;
     height: auto;
     margin: 20px 0;
     border-radius: 8px;
@@ -234,11 +235,11 @@ body {
     margin-bottom: 15px;
     padding: 10px 20px;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #E69B97;
     border: 2px solid #E69B97;
     display: inline-block;
-    border-radius: 4px;
+    border-radius: 3px;
 }
 
 .dress-code p {
@@ -322,12 +323,10 @@ button:hover {
 @media (max-width: 480px) {
     .container {
         padding: 20px;
-        background-size: 120% 105%;
     }
 
     .invitation-card {
-        margin: 30px;
-        width: 90%;
+        margin: 0;
     }
 
     .main-image {
